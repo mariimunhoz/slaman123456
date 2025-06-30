@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+
+:root {
+    --primeira-cor: pink;
+    --segunda-cor: rgb(244, 7, 102);
+    --terceira-cor: ;
+    --texto-cor: rgb(0, 0, 0);
+    --titulo-fonte: "Permanent+Marker";
+    --fonte-texto: "Fredoka";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--texto-cor);
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--fonte-titulo);
+  }
+  
+  h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 26px;
+    margin-top: 15px;
+  }
+
+  h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  
+  p {
+    margin-top: 8px;
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 20px;
+    hyphens: auto;
+  }
+
+a {
+    margin-top: 30px;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #db95b7, #f5a9c7, #e66bab);
+    color: linear-gradient(135deg, #db95b7, #f5a9c7, #e66bab);
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background-color: rgb(255, 202, 211);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav a {
+    margin: 20px 0;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background 0.3s, color 0.3s;
+    padding: 10px;
+    width: 100%;
+    overflow-wrap: break-word;
+    border-radius: 5px;
+    }
+
+
+nav a:hover {
+    background-color: #f8c4c4;
+    color: white;
+}
+
+header {
+  
+  margin-left: 200px;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  padding: 20px 40px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, #f48790, #f50072, #ffdbee, #f90074);
+  background-size: 400% 400%;
+  animation: movimentoFundo 5s ease infinite;
+  z-index: -1;
+  opacity: 0.4;
+  mix-blend-mode: screen;
+  filter: blur(20px);
+  border-radius: 0 0 20px 20px;
+}
+
+/* brilho neon no texto */
+header h1 {
+  text-shadow:
+    0 0 5px #f48790,
+     0 0 10px #f50072,
+      0 0 20px #ffffff,
+    0 0 40px #f90074;
+
+  animation: brilhoNeon 2s ease-in-out infinite alternate;
+  margin: 0;
+}
+
+/* animação do fundo */
+@keyframes movimentoFundo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* animação do texto neon */
+@keyframes brilhoNeon {
+  from {
+    text-shadow:
+      0 0 5px #f48790,
+      0 0 10px #f50072,
+      0 0 20px #ffffff,
+      0 0 30px #f90074;
+  }
+  to {
+    text-shadow:
+      0 0 10px #f48790,
+      0 0 20px #f50072,
+      0 0 40px #ffffff,
+      0 0 60px #f90074;
+  }
+}
+
+header h1 {
+    font-size: 2em;
+    color: #000000;
+}
+
+main section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+main a {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--primeira-cor);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgb(60, 60, 60);
+    transition: transform 2s ease;
+    text-shadow: none;
+  }
+  
+  main a:hover {
+    transform: rotate(360deg);
+    box-shadow: 15px 15px 15px rgb(20, 20, 20);
+  }
+
+.conteudo {
+    margin-left: 200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+footer {
+    margin-left: 200px;
+    background-color: #f8c4c4;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 700px) {
+    nav {
+        width: 60px;
+    }
+
+    nav a {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    header, main, footer {
+        margin-left: 70px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+.botao {
+  margin-top: 30px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  background: #f8c4c4;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.tabela{
+    text-align: center;
+}
+
+.img{
+  Width: 600px;
+Border-radius: 12px;
+}
+
+.formas{
+  width: 1000px;
+}
+
+.logoescola{
+  width: 250px;
+}
+
+
+

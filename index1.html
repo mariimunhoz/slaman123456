@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem e Análise Combinatória</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+<body>
+
+    <header class="conteudo">
+        <h1>D32-Contagem e Análise Combinatória</h1>
+    </header>
+    <nav>
+       <a href="index.html">Início</a>
+        <a href="index1.html">Contagem e Análise Combinatória</a>
+        <a href="index2.html">Tabelas e Gráficos</a>
+        <a href="index3.html">Volume</a>
+    </nav>
+
+<main class="conteudo">
+    <section>
+        <article>
+            
+            <h2>Contagem e Análise Combinatória</h2>
+            <p>D32-Resolver problema de contagem utilizando o princípio multiplicativo ou noções de permutação simples, arranjo simples e/ou combinação simples.</p>
+
+            <p>A análise combinatória é um ramo da matemática que estuda as diferentes maneiras de contar, organizar e agrupar elementos dentro de um conjunto, respeitando determinadas condições. Esse conteúdo é fundamental não só em contextos acadêmicos, mas também em áreas práticas como computação, estatística, jogos, probabilidade e planejamento.</p>
+
+            <h3>Princípio Fundamental da Contagem</h3>
+
+            <p>O princípio fundamental da contagem afirma que, se um processo pode ser realizado em etapas sucessivas e independentes, o número total de maneiras de realizá-lo é o produto do número de possibilidades de cada etapa.
+            </p>
+
+            <p>Exemplo: Se uma pessoa pode escolher 3 camisas e 2 calças, ela poderá formar 3 × 2 = 6 combinações de roupas diferentes.</p>
+
+            <h3>Fatorial</h3>
+
+            <p>O fatorial de um número inteiro positivo n, indicado por n!, representa o produto de todos os inteiros positivos de 1 até n.</p>
+
+            <p>Exemplo:
+                5! = 5 × 4 × 3 × 2 × 1 = 120
+
+                Esse conceito é essencial para entender permutações e combinações.
+                </p>
+
+            <h3>Técnicas da Análise Combinatória</h3>
+            <img src="analise.png" alt="analisec">
+
+            <p>1. Permutação
+                A permutação é toda arrumação de elementos em que a ordem importa.
+                
+                Permutação simples (todos os elementos distintos):
+                Fórmula: Pₙ = n!
+                Exemplo: De quantas formas podemos organizar 4 livros diferentes?
+                P₄ = 4! = 24 formas.
+                
+                Permutação com repetição (elementos repetidos):
+                Fórmula: P = n! / (a! × b! × c! ...)
+                Exemplo: A palavra "MASSA" tem 5 letras, com 2 letras "S" e 2 letras "A":
+                P = 5! / (2! × 2!) = 120 / 4 = 30 formas.
+            </p>
+
+            <p>2. Arranjo
+                O arranjo é uma sequência de elementos escolhidos de um conjunto, onde a ordem importa, mas nem todos os elementos precisam ser usados.
+                
+                Fórmula: Aₙ,ₚ = n! / (n-p)!
+                Exemplo: De 6 alunos, quantas duplas ordenadas podemos formar?
+                A₆,₂ = 6! / (6-2)! = 720 / 24 = 30.
+            </p>
+
+            <p>
+                3. Combinação
+                A combinação representa a escolha de elementos sem se importar com a ordem.
+                
+                Fórmula: Cₙ,ₚ = n! / (p! × (n-p)!)
+                Exemplo: Quantos grupos de 3 alunos podem ser formados a partir de 5?
+                C₅,₃ = 5! / (3! × 2!) = 120 / (6×2) = 120 / 12 = 10.
+            </p>
+
+            <a href="https://www.todamateria.com.br/exercicios-de-analise-combinatoria/">Exercicios de analise combinatoria</a>
+            <a href="https://youtu.be/_8mZOSXCRp8?si=EqB7APi6pxxo9Z96">Vídeo-aula</a>
+
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 - feito por Mariana, Rafaela e Pedro</p> 
+</footer>
+
+</body>
+
+</html>
